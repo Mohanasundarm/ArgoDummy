@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  replicas: 5
+  replicas: 7
   selector:
     matchLabels:
       app: guestbook-ui
@@ -29,5 +29,6 @@ spec:
     targetPort: 80
   selector:
     app: guestbook-ui
+
 
 
